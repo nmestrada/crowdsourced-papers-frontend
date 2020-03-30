@@ -24,6 +24,10 @@ module ScienceEngine
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    config.auth_username = ENV['AUTH_USERNAME']
+    config.auth_password = ENV['AUTH_PASSWORD']
+    raise 'Please set AUTH_USERNAME and AUTH_PASSWORD environment variables' unless config.auth_username && config.auth_password
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
