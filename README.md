@@ -35,9 +35,10 @@ rails db:setup
 
 The following environment variables can be set:
 
-| Environment variable         | Description |
-| `AUTH_USERNAME` | Username for basic authentication |
-| `AUTH_PASSWORD` | Password for basic authentication |
+| Environment variable | Description |
+| ---------------------|--------------------------|
+| `AUTH_USERNAME`      | Username for basic authentication |
+| `AUTH_PASSWORD`      | Password for basic authentication |
 
 
 ## Launch app
