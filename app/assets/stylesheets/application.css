@@ -13,29 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.form-textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    border-color: #d2d6dc;
-    border-width: 1px;
-    border-radius: .375rem;
-    padding: .5rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.form-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    /* border-color: #d2d6dc; */
-    border-width: 1px;
-    border-radius: .375rem;
-    padding: .5rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-}
