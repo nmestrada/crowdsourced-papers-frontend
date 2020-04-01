@@ -10,7 +10,28 @@
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="flex flex-col min-h-screen h-full bg-gray-100">
+    <div class="flex-1 bg-gray-100">
+
+      <div class="py-10">
+        <main class="flex-grow">
+          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <% flash.each do |type, msg| %>
+              <div class="mb-8 <%= alert_container_class_for_flash_type type %>" role="alert">
+                <span class="block sm:inline"><%= msg %></span>
+              </div>
+            <% end %>
+
+            <%= yield %>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="w-full border-t border-gray-200 px-5 py-5">
+      <div class="text-center text-gray-500 text-sm">
+         <%= link_to '@c19science on twitter', 'https://twitter.com/c19science', class: 'text-indigo-500' %>
+      </div>
+    </footer>
   </body>
 </html>
