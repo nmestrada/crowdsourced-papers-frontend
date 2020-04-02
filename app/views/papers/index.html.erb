@@ -1,29 +1,27 @@
-<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-<div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
-  <%= form_with do |f| %>
-    <div>
-      <div>
-        <div>
-          <h3 class="text-lg leading-6 font-medium text-gray-900">
-            Submit new paper
-          </h3>
-          <p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
-            This information will be displayed publicly.
-          </p>
-        </div>
 
-        <%= render partial: 'paper_form', locals: { f: f } %>
-      </div>
-    </div>
-    <div class="mt-8 border-t border-gray-200 pt-5">
-      <div class="flex justify-end">
-        <span class="ml-3 inline-flex rounded-md shadow-sm">
-          <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
-            Submit paper
+<div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6 mb-4">
+  <div class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-no-wrap">
+    <h3 class="text-lg leading-6 font-medium text-gray-900 ml-4 mt-4">
+        COVID-19 Science Engine (Prototype)
+    </h3>
+    <div class="ml-4 mt-4 flex-shrink-0">
+      <span class="inline-flex rounded-md shadow-sm">
+        <%= link_to "/submit" do %>
+          <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700">
+            Submit another paper
           </button>
-        </span>
-      </div>
+        <% end %>
+      </span>
     </div>
-  <% end %>
+  </div>
 </div>
-</div>
+
+<% if @papers.present? %>
+  <div class="overflow-hidden">
+    <ul>
+      <% @papers.each do |paper| %>
+        <%= render partial: 'paper', locals: { paper: paper,  } %>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

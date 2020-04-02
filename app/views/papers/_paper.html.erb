@@ -1,0 +1,28 @@
+<li class="shadow bg-white border border-gray-200 mb-6 sm:rounded-md">
+    <div class="px-4 py-4 sm:px-6">
+        <h2 class="text-xl leading-5 font-medium text-indigo-600 truncate underline">
+            <%= link_to paper.title, paper.link, rel: "nofollow" %>
+        </h2>
+        <h3 class="mt-1 text-gray-500"><%= link_to paper.authors %>, <%= paper.affiliations %></h3>
+
+        <p class="mt-4">
+            <span class="font-medium text-sm">Molecular targets:</span>
+            <span class="text-sm text-gray-500">
+                <%= paper.target %>
+            </span>
+        </p>
+
+        <div class="mt-4">
+            <h3 class="text-sm font-medium ">Key Findings</h3>
+            <div class="text-sm text-gray-500">
+                <%= simple_format paper.key_finding, class: 'mb-2' %>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h3 class="text-sm font-medium ">Context</h3>
+            <div class="text-sm text-gray-500">
+                <%= simple_format paper.context, class: 'mb-2' %>
+            </div>
+        </div>
+    </div>
+</li>
