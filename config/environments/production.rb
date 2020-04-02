@@ -111,4 +111,7 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
+
+  config.basic_auth_username = ENV['AUTH_USERNAME']
+  config.basic_auth_password = ENV['AUTH_PASSWORD']
 end
