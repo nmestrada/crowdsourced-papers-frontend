@@ -44,7 +44,7 @@ The following environment variables can be set:
 ## Launch app
 
 ```
-AUTH_USERNAME=foo AUTH_PASSWORD=bar rails server
+rails server
 ```
 
 Then go to [http://localhost:3000](http://localhost:3000) to view the app
