@@ -4,8 +4,8 @@
       Title
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_field "title", class: "flex-1 form-input block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "title", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
       </div>
     </div>
   </div>
@@ -15,8 +15,8 @@
       Direct link to the paper
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_field "link", class: "flex-1 form-input block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "link", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
       </div>
     </div>
   </div>
@@ -26,19 +26,19 @@
       Summarise the key finding
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_area "key_finding", rows: 3, class: "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_area "key_finding", rows: 3, class: "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
       </div>
     </div>
   </div>
 
   <div class="mt-6 sm:mt-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
     <label for="context" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
-      Important context to the work, e.g. <i>One of the first studies to identify SARS-CoV2 (2019-nCoV) and establish link to Covid19 syndrome</i> <span class="text-xs">(optional)</span>
+      Important context to the work, e.g. <i>One of the first studies to identify SARS-CoV2 (2019-nCoV) and establish link to Covid19 syndrome</i>
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_area "context", rows: 3, class: "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_area "context", rows: 3, class: "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
       </div>
     </div>
   </div>
@@ -48,8 +48,8 @@
       Authors
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_field "authors", class: "flex-1 form-input block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "authors", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
       </div>
     </div>
   </div>
@@ -59,8 +59,8 @@
       Affiliation of senior author
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_field "affiliations", class: "flex-1 form-input block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "affiliations", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
       </div>
     </div>
   </div>
@@ -70,8 +70,8 @@
       Contact information <span class="text-xs">(optional)</span>
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_field "contact", class: "flex-1 form-input block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "contact", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: false %>
       </div>
     </div>
   </div>
@@ -81,8 +81,8 @@
       Molecular targets, e.g. <i>ACE2, spike (S) protein, viral RNA genome</i>
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg flex rounded-md shadow-sm">
-        <%= f.text_field "target", class: "flex-1 form-input block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5", required: true %>
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "target", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
-  <%= form_with scope: :paper do |f| %>
+  <%= form_with scope: :paper, local: true do |f| %>
     <div>
       <div>
         <div>
@@ -11,6 +11,20 @@
             This information will be displayed publicly.
           </p>
         </div>
+
+        <% if @paper.errors.any? %>
+        <div id="error_explanation" class="mt-8 border-red-500 p-2 border-2">
+          <h2>
+            <%= pluralize(@paper.errors.count, "error") %> prohibited
+            this paper from being saved:
+          </h2>
+          <ul class="list-disc list-inside m-1">
+            <% @paper.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+        <% end %>
 
         <%= render partial: 'paper_form', locals: { f: f } %>
       </div>

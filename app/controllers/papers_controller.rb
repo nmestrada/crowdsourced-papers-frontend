@@ -1,11 +1,19 @@
 class PapersController < ApplicationController
+    def new
+        @paper = Paper.new
+    end
+
     def post
-        paper = Paper.new(paper_params)
+        @paper = Paper.new(paper_params)
 
-        paper.save
-
-        flash[:notice] = "Thanks for submitting a new paper"
-        redirect_to action: :index
+        if @paper.save
+            flash[:notice] = "Thanks for submitting a new paper"
+            redirect_to action: :index
+          else
+            puts "invalid"
+            puts @paper.errors.inspect
+            render 'new'
+          end
     end
 
     def index
