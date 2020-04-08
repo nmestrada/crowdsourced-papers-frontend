@@ -2,6 +2,8 @@
 
 A website for researchers to search papers related to COVID-19.
 
+![Screenshot showing a list of papers](docs/screenshot.png)
+
 Summaries and metadata can be manually submitted (this will be automated later)
 
 The prototype is available at https://covid-science-engine-prototype.herokuapp.com/ (currently password protected)
