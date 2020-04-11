@@ -1,0 +1,34 @@
+# https://github.com/marketplace/actions/setup-ruby-for-use-with-actions
+name: Rails Unit Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ruby:2.6.5
+
+    services:
+      db:
+        image: postgres:11
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        env:
+          POSTGRES_PASSWORD: postgres
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build and test with Rake
+        env:
+          RAILS_ENV: test
+          DATABASE_URL: 'postgresql://postgres:postgres@db/science_engine_test?pool=5'
+        run: |
+          #gem install bundler
+          bundle install --jobs 4 --retry 3
+          bundle exec rails db:create
+          bundle exec rails db:migrate
+          bundle exec rails test
