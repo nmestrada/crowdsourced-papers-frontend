@@ -1,0 +1,61 @@
+.big-title {
+    @apply text-2xl font-bold tracking-tight leading-tight;
+}
+
+.big-subtitle {
+    @apply tracking-tight leading-tight mt-2;
+}
+
+@screen sm {
+    .big-title {
+        @apply text-4xl;
+    }
+
+    .big-subtitle {
+        @apply text-2xl;
+    }
+}
+
+.small-title {
+    @apply text-lg leading-6 font-medium text-gray-900 ml-4 mt-4;
+}
+
+.card {
+    @apply shadow bg-white border border-gray-200 mb-6;
+}
+
+.card .card-inner {
+    @apply px-4 py-4;
+}
+
+@screen sm {
+    .card {
+        @apply rounded-md;
+    }
+
+    .card .card-inner {
+        @apply px-6;
+    }
+}
+
+/* Card heading */
+.card h2 {
+    @apply text-xl leading-5 font-medium text-blue-600 truncate underline ml-0 mt-0;
+}
+
+/* Card subheading */
+.card h3 {
+    @apply mt-1 text-gray-600;
+}
+
+.card .card-section {
+    @apply mt-4;
+}
+
+.card .card-section h3 {
+    @apply font-medium text-sm text-black;
+}
+
+.card .card-section p {
+    @apply text-sm text-gray-600 mb-2 text-sm text-gray-600
+}
