@@ -10,5 +10,5 @@ class Paper < ApplicationRecord
     validates :date_published, presence: true
     validates :source, presence: true
     validates :data_deposition, presence: true
-    validates :methods, presence: true
+    validates :methods_summary, presence: true
 end

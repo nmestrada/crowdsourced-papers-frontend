@@ -35,7 +35,7 @@ private
             :country,
             :date_published,
             :source,
-            :methods,
+            :methods_summary,
             :data_deposition,
             :submitter_name
         )
