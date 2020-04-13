@@ -6,4 +6,9 @@ class Paper < ApplicationRecord
     validates :context, presence: true
     validates :target, presence: true
     validates :affiliations, presence: true
+    validates :country, presence: true
+    validates :date_published, presence: true
+    validates :source, presence: true
+    validates :data_deposition, presence: true
+    validates :methods, presence: true
 end
