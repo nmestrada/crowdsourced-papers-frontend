@@ -59,3 +59,19 @@ h4 {
 p {
     @apply text-sm text-gray-700 mb-2 text-sm leading-5
 }
+
+button {
+    @apply px-4 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-blue-600 rounded-md shadow-sm
+}
+
+button:hover {
+    @apply bg-blue-500
+}
+
+button:active {
+    @apply bg-blue-700
+}
+
+button:focus {
+    @apply outline-none shadow-outline-blue border-blue-700
+}
