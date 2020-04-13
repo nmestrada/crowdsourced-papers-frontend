@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_02_181333) do
+ActiveRecord::Schema.define(version: 2020_04_13_150354) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 2020_04_02_181333) do
     t.string "title"
     t.text "key_finding"
     t.string "target"
-    t.string "models"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "link"
@@ -27,6 +26,12 @@ ActiveRecord::Schema.define(version: 2020_04_02_181333) do
     t.text "context"
     t.string "authors"
     t.string "contact"
+    t.string "country"
+    t.date "date_published"
+    t.string "source"
+    t.string "methods"
+    t.string "data_deposition"
+    t.string "submitter_name"
   end
 
 end
