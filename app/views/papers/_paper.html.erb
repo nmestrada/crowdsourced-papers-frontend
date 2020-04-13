@@ -6,18 +6,18 @@
         <h3><%= link_to paper.authors %>, <%= paper.affiliations %></h3>
 
         <div class="card-section">
-            <h3>Molecular targets</h3>
+            <h4>Molecular targets</h4>
             <p>
                 <%= paper.target %>
             </p>
         </div>
 
         <div class="card-section">
-            <h3>Key Findings</h3>
+            <h4>Key Findings</h4>
             <%= simple_format paper.key_finding %>
         </div>
         <div class="card-section">
-            <h3>Context</h3>
+            <h4>Context</h4>
             <%= simple_format paper.context %>
         </div>
     </div>
