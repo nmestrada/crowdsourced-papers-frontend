@@ -115,7 +115,7 @@
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
       <div class="max-w-lg flex shadow-sm">
-        <%= f.text_field "country", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+        <%= f.country_select "country", {}, class: "flex-1 form-select block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", include_blank: true, required: true %>
       </div>
     </div>
   </div>
