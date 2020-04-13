@@ -21,9 +21,53 @@
     </div>
   </div>
 
+  <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+    <label for="date_published" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Date published
+    </label>
+    <div class="mt-1 sm:mt-0 sm:col-span-2">
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.date_field "date_published", max: Date.today, class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+    <label for="authors" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      First and last author
+    </label>
+    <div class="mt-1 sm:mt-0 sm:col-span-2">
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "authors", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+    <label for="contact" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Corresponding author's email address <span class="text-xs">(optional)</span>
+    </label>
+    <div class="mt-1 sm:mt-0 sm:col-span-2">
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "contact", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: false %>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+    <label for="source" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Journal or platform where it is published
+    </label>
+    <div class="mt-1 sm:mt-0 sm:col-span-2">
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "source", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+      </div>
+    </div>
+  </div>
+
   <div class="mt-6 sm:mt-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
     <label for="key_finding" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
-      Summarise the key finding
+      Please describe the key findings of the paper as a bullet point list with max. 5 entries.
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
       <div class="max-w-lg flex shadow-sm">
@@ -34,7 +78,7 @@
 
   <div class="mt-6 sm:mt-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
     <label for="context" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
-      Important context to the work, e.g. <i>One of the first studies to identify SARS-CoV2 (2019-nCoV) and establish link to Covid19 syndrome</i>
+      Please provide some short context of why this work is important and how it relates to other research findings (i.e. confirms or contradicts them).
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
       <div class="max-w-lg flex shadow-sm">
@@ -44,19 +88,19 @@
   </div>
 
   <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-    <label for="authors" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
-      Authors
+    <label for="target" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Please provide a short list of the most important molecular targets in this study.
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
       <div class="max-w-lg flex shadow-sm">
-        <%= f.text_field "authors", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+        <%= f.text_field "target", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", placeholder: "ACE2, spike (S) protein, viral RNA genome", required: true %>
       </div>
     </div>
   </div>
 
   <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
     <label for="affiliations" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
-      Affiliation of senior author
+      Affiliation of the senior author
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
       <div class="max-w-lg flex shadow-sm">
@@ -66,23 +110,45 @@
   </div>
 
   <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-    <label for="contact" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
-      Contact information <span class="text-xs">(optional)</span>
+    <label for="country" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Country of the affiliation of the senior author
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
       <div class="max-w-lg flex shadow-sm">
-        <%= f.text_field "contact", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: false %>
+        <%= f.country_select "country", {}, class: "flex-1 form-select block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", include_blank: true, required: true %>
       </div>
     </div>
   </div>
 
   <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-    <label for="target" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
-      Molecular targets, e.g. <i>ACE2, spike (S) protein, viral RNA genome</i>
+    <label for="methods" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Please provide the methods section as a bullet point list.
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
       <div class="max-w-lg flex shadow-sm">
-        <%= f.text_field "target", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+        <%= f.text_area "methods", rows: 3, class: "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+    <label for="data_deposition" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Please link to entries in databases (i.e. for genomic sequence data)
+    </label>
+    <div class="mt-1 sm:mt-0 sm:col-span-2">
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_area "data_deposition", rows: 3, class: "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+    <label for="submitter_name" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+      Your name <span class="text-xs">(optional)</span>
+    </label>
+    <div class="mt-1 sm:mt-0 sm:col-span-2">
+      <div class="max-w-lg flex shadow-sm">
+        <%= f.text_field "submitter_name", class: "flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 rounded-none", required: false %>
       </div>
     </div>
   </div>

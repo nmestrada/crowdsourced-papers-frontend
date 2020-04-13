@@ -23,6 +23,21 @@ class PapersController < ApplicationController
 private
 
     def paper_params
-        params.require(:paper).permit(:title, :link, :key_finding, :context, :authors, :affiliations, :contact, :target)
+        params.require(:paper).permit(
+            :title,
+            :link,
+            :key_finding,
+            :context,
+            :authors,
+            :affiliations,
+            :contact,
+            :target,
+            :country,
+            :date_published,
+            :source,
+            :methods,
+            :data_deposition,
+            :submitter_name
+        )
     end
 end
