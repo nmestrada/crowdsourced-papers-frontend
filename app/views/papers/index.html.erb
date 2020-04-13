@@ -6,11 +6,7 @@
     </h1>
     <div class="ml-4 mt-4 flex-shrink-0">
       <span class="inline-flex">
-        <%= link_to "/submit" do %>
-          <button type="button" class="relative inline-flex items-center">
-            Submit another paper
-          </button>
-        <% end %>
+        <%= button_to "Submit another paper", "/submit", method: "get", class: "button relative inline-flex items-center" %>
       </span>
     </div>
   </div>
