@@ -53,9 +53,9 @@
 }
 
 h4 {
-    @apply font-medium text-sm text-black leading-4;
+    @apply font-medium text-sm text-blue-600 leading-4;
 }
 
 p {
-    @apply text-sm text-gray-600 mb-2 text-sm text-gray-600 leading-5
+    @apply text-sm text-gray-700 mb-2 text-sm leading-5
 }
