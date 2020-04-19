@@ -1,6 +1,6 @@
 # Contributing
 
-Hi, thanks for volunteering to help build the COVID Science Engine. We are in the early stages of this project and all contributions are very welcome! ❤️
+Hi, thanks for volunteering to help build the COVID Science Engine. We are in the early stages of this project and all contributions are very welcome!
 
 ## How you can help
 There are lots of ways you can help. For example:
