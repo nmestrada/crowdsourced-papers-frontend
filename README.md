@@ -73,7 +73,7 @@ We are looking for new contributors to help us build this project.
 
 👉 Please read our [Contributing guide](CONTRIBUTING.md) to get started. 👈
 
-You can also join are [Discord server](https://discord.gg/V6kzVAS) to ask questions.
+You can also join our [Discord server](https://discord.gg/V6kzVAS) to get in touch.
 
 # License
 
