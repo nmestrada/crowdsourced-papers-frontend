@@ -58,7 +58,7 @@ rails server
 
 Then go to [http://localhost:3000](http://localhost:3000) to view the app.
 
-Current we have some basic authentication in front of the website. We will be replacing this with something better soon.
+Currently, we have some basic authentication in front of the website. We will be replacing this with something better soon.
 
 In development, the username and password is `foo` /  `bar`.
 
