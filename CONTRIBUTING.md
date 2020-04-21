@@ -44,7 +44,7 @@ To simplify the frontend development, we're using the [TailwindCSS framework](ht
 ## Pull Request Process
 
 1. If you are new to github, have a look at their documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
-2. Raise a pull request any time you have some code that you want feedback on, even if it's not finished. Create it as a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if it's not ready to be merged it.
+2. Raise a pull request any time you have some code that you want feedback on, even if it's not finished. Create it as a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if it's not ready to be merged yet.
 3. When you raise an issue, Github Actions will automatically run tests on your branch (we're still working on the actual tests). The tests must pass before we can merge the code.
 4. The pull request will be merged once someone has reviewed and approved it.
 5. The reviewer should discuss any changes that should be made before merging. This may include optional suggestions that are left up to the author. Please ask if it's not clear which suggestions are required or not.
@@ -55,8 +55,8 @@ Everyone is encouraged to review any pull request, even if you are not a maintai
 
 Only maintainers can merge into the master branch. If you want to take on this role, let us know in the [Discord](https://discord.gg/V6kzVAS) chat. We would like to have a few people with this role so the project is not dependent on one or two people.
 
-Whenever changes are merged into master, there is an automatic deployment to Heroku. If for any reason this breaks the website, you should [revert the pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reverting-a-pull-request) and let the author know. 
-   
+Whenever changes are merged into master, there is an automatic deployment to Heroku. If for any reason this breaks the website, you should [revert the pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reverting-a-pull-request) and let the author know.
+
 ## Roadmap
 The basic problem we are trying to solve is:
 
@@ -73,7 +73,7 @@ The basic problem we are trying to solve is:
 
  The [MVP project board](https://github.com/COVID-science-engine/crowdsourced-papers-prototype/projects/1) is tracking the issues we need to complete
  in order to launch the initial version of the website. In the meantime we just have a fully [static version of the website](http://www.c19science.com/) live.
- 
+
  ## Relevant external links
 - [Discord](https://discord.gg/V6kzVAS)
 - [Figma Designs](https://www.figma.com/file/RtHSp2qSI9TJfzxjRmLCOj/Covid-Science-Engine---Design-System)
