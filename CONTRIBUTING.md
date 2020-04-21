@@ -9,7 +9,7 @@ There are lots of ways you can help. For example:
 - Discussing how to solve open issues, or adding context to make them easier to work on
 - Designing and building new features
 - Reviewing code and supporting other contributors
-- Fixing or reporting bugs
+- Fixing or [reporting bugs](#reporting-issues)
 
 A good place to start is by looking at the issues tagged with [good first issue](https://github.com/COVID-science-engine/crowdsourced-papers-prototype/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 These should be written in a way that doesn't assume a lot of knowledge of the platform. If anything is unclear, please ask 🙂
