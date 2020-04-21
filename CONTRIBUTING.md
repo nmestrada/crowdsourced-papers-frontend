@@ -46,7 +46,7 @@ To simplify the frontend development, we're using the [TailwindCSS framework](ht
 1. If you are new to github, have a look at their documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 2. Raise a pull request any time you have some code that you want feedback on, even if it's not finished. Create it as a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if it's not ready to be merged it.
 3. When you raise an issue, Github Actions will automatically run tests on your branch (we're still working on the actual tests). The tests must pass before we can merge the code.
-4. The pull request will be merged once someone has reviewed and approved it
+4. The pull request will be merged once someone has reviewed and approved it.
 5. The reviewer should discuss any changes that should be made before merging. This may include optional suggestions that are left up to the author. Please ask if it's not clear which suggestions are required or not.
 
 ## Reviewing, merging, deploying
