@@ -55,6 +55,8 @@ Everyone is encouraged to review any pull request, even if you are not a maintai
 
 Only maintainers can merge into the master branch. If you want to take on this role, let us know in the [Discord](https://discord.gg/V6kzVAS) chat. We would like to have a few people with this role so the project is not dependent on one or two people.
 
+Maintainers also help keep our dependencies up to date by merging pull requests submitted by [dependabot](https://github.com/COVID-science-engine/crowdsourced-papers-frontend/labels/dependencies).
+
 Whenever changes are merged into master, there is an automatic deployment to Heroku. If for any reason this breaks the website, you should [revert the pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reverting-a-pull-request) and let the author know.
 
 ## Roadmap
