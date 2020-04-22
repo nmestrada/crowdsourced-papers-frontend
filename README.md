@@ -18,6 +18,7 @@ The prototype is available at https://covid-science-engine-prototype.herokuapp.c
 The stack is:
 
 - Ruby on Rails 6.0
+- React (with TypeScript)
 - Tailwind CSS
 - Postgres
 - Heroku
@@ -42,6 +43,10 @@ Setup the database and seed data:
 rails db:setup
 ```
 
+### Editor
+
+You can use your editor of choice but please make sure to reformat your code with [Prettier](https://www.moeckernkiez.de/quartier-moeckernkiez/freie-wohnungen/kosten/) according to the `.prettierrc` file.
+
 ## Configuration
 
 The following environment variables can be set:
@@ -61,7 +66,7 @@ Then go to [http://localhost:3000](http://localhost:3000) to view the app.
 
 Currently, we have some basic authentication in front of the website. We will be replacing this with something better soon.
 
-In development, the username and password is `foo` /  `bar`.
+In development, the username and password is `foo` / `bar`.
 
 ## Running tests
 
@@ -70,6 +75,7 @@ rails spec
 ```
 
 # Contributing
+
 We are looking for new contributors to help us build this project.
 
 👉 Please read our [Contributing guide](CONTRIBUTING.md) to get started. 👈
