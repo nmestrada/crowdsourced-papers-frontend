@@ -27,7 +27,7 @@ jobs:
           RAILS_ENV: test
           DATABASE_URL: 'postgresql://postgres:postgres@db/science_engine_test?pool=5'
         run: |
-          #gem install bundler
+          apt-get update && apt-get install -y nodejs
           bundle install --jobs 4 --retry 3
           bundle exec rails db:create
           bundle exec rails db:migrate
