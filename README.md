@@ -1,6 +1,6 @@
 # COVID science engine: crowdsourced papers prototype
 
-A website for researchers to search papers related to COVID-19.
+A tool for researchers to quickly understand and contextualize Covid19 research papers.
 
 Biomedical researchers have to painstakingly search for relevant information in thousands of papers and in each paper in a lot of irrelevant text.
 
