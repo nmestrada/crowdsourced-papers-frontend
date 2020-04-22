@@ -1,73 +1,73 @@
 .big-title {
-    @apply text-2xl font-bold tracking-tight leading-tight;
+  @apply text-2xl font-bold tracking-tight leading-tight;
 }
 
 .big-subtitle {
-    @apply tracking-tight leading-tight mt-2;
+  @apply tracking-tight leading-tight mt-2;
 }
 
 @screen sm {
-    .big-title {
-        @apply text-4xl;
-    }
+  .big-title {
+    @apply text-4xl;
+  }
 
-    .big-subtitle {
-        @apply text-2xl;
-    }
+  .big-subtitle {
+    @apply text-2xl;
+  }
 }
 
 .small-title {
-    @apply text-lg leading-6 font-medium text-gray-900 ml-4 mt-4;
+  @apply text-lg leading-6 font-medium text-gray-900 ml-4 mt-4;
 }
 
 .card {
-    @apply shadow bg-white border border-gray-200 mb-6;
+  @apply shadow bg-white border border-gray-200 mb-6;
 }
 
 .card .card-inner {
-    @apply px-4 py-4;
+  @apply px-4 py-4;
 }
 
 @screen sm {
-    .card {
-        @apply rounded-md;
-    }
+  .card {
+    @apply rounded-md;
+  }
 
-    .card .card-inner {
-        @apply px-6;
-    }
+  .card .card-inner {
+    @apply px-6;
+  }
 }
 
 /* Card heading */
 .card h2 {
-    @apply text-xl leading-6 font-medium text-blue-600 truncate underline ml-0 mt-0;
+  @apply text-xl leading-6 font-medium text-blue-600 truncate underline ml-0 mt-0;
 }
 
 /* Card subheading */
 .card h3 {
-    @apply mt-1 leading-5 text-gray-600;
+  @apply mt-1 leading-5 text-gray-600;
 }
 
 .card .card-section {
-    @apply mt-4;
+  @apply mt-4;
 }
 
 h4 {
-    @apply font-medium text-sm text-blue-600 leading-4;
+  @apply font-medium text-sm text-blue-600 leading-4;
 }
 
 p {
-    @apply text-sm text-gray-700 mb-2 text-sm leading-5
+  @apply text-sm text-gray-700 mb-2 text-sm leading-5;
 }
 
 .button {
-    @apply px-4 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-blue-600 rounded-md shadow-sm
+  @apply px-4 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-blue-600 rounded-md shadow-sm;
 }
 
 .button:hover {
-    @apply bg-blue-500
+  @apply bg-blue-500;
 }
 
 .button:active {
-    @apply bg-blue-700
+  @apply bg-blue-700;
 }
