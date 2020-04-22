@@ -12,7 +12,7 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.0'
+gem 'webpacker', '~> 5.1'
 # Use React inside Rails. Read more: https://github.com/reactjs/react-rails#get-started-with-webpacker
 gem 'react-rails', '>= 2.6'
 gem 'execjs', '>= 2.7'
