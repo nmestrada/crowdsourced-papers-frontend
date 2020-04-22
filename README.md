@@ -2,6 +2,11 @@
 
 A website for researchers to search papers related to COVID-19.
 
+Biomedical researchers have to painstakingly search for relevant information in thousands of papers and in each paper in a lot of irrelevant text.
+
+We want to use a combination of human and machine intelligence to accelerate this process drastically. We are building an NLP algorithm that is able to extract meaningful information and contextualize it. In the meantime, we are allowing information to be manually submitted
+so we can build a useful database of papers.
+
 ![Screenshot showing a list of papers](docs/screenshot.png)
 
 Summaries and metadata can be manually submitted (this will be automated later)
@@ -12,7 +17,9 @@ The prototype is available at https://covid-science-engine-prototype.herokuapp.c
 The stack is:
 
 - Ruby on Rails 6.0
+- Tailwind CSS
 - Postgres
+- Heroku
 
 ### Installation
 
@@ -49,7 +56,11 @@ The following environment variables can be set:
 rails server
 ```
 
-Then go to [http://localhost:3000](http://localhost:3000) to view the app
+Then go to [http://localhost:3000](http://localhost:3000) to view the app.
+
+Currently, we have some basic authentication in front of the website. We will be replacing this with something better soon.
+
+In development, the username and password is `foo` /  `bar`.
 
 ## Running tests
 
@@ -58,17 +69,12 @@ rails spec
 ```
 
 # Contributing
+We are looking for new contributors to help us build this project.
 
-Help is welcome!
+👉 Please read our [Contributing guide](CONTRIBUTING.md) to get started. 👈
 
-For more information about the project, see the project page on [Help with COVID](https://helpwithcovid.com/projects/288-science-engine-covid-biotech-literature-natural-language-processing-ai).
-
-We are communicating on [Discord](https://discord.gg/V6kzVAS)
-
-1. Fork the project
-1. Create a branch with your changes
-1. Submit a pull request
+You can also join our [Discord server](https://discord.gg/V6kzVAS) to get in touch.
 
 # License
 
-MIT
+This code uses the [MIT license](LICENSE).
