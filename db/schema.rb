@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_13_150354) do
+ActiveRecord::Schema.define(version: 2020_04_13_170957) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2020_04_13_150354) do
     t.string "country"
     t.date "date_published"
     t.string "source"
-    t.string "methods"
+    t.string "methods_summary"
     t.string "data_deposition"
     t.string "submitter_name"
   end
