@@ -114,4 +114,9 @@ Rails.application.configure do
 
   config.basic_auth_username = ENV['AUTH_USERNAME']
   config.basic_auth_password = ENV['AUTH_PASSWORD']
+
+  # Devise recommends keeping this at :warn,
+  # because Action Mailer logs the entire contents of all outgoing emails to the DEBUG level
+  # and Active Job logs all arguments to every enqueued job at the INFO level
+  config.log_level = :warn
 end
