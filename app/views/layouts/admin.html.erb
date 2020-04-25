@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Science Engine - Admin</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="flex flex-col min-h-screen h-full bg-gray-100">
+    <div class="logout">
+        <%= link_to('Log out', destroy_user_session_path, method: :delete) %>
+    </div>
+
+    <div class="flex-1 bg-gray-100">
+
+      <div class="py-10">
+        <main class="flex-grow">
+          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <% flash.each do |type, msg| %>
+              <div class="mb-8 <%= alert_container_class_for_flash_type type %>" role="alert">
+                <span class="block sm:inline"><%= msg %></span>
+              </div>
+            <% end %>
+
+            <%= yield %>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="w-full border-t border-gray-200 px-5 py-5">
+      <div class="text-center text-gray-600 text-sm">
+         <%= link_to '@c19science on twitter', 'https://twitter.com/c19science', class: 'text-blue-500' %>
+      </div>
+    </footer>
+  </body>
+</html>

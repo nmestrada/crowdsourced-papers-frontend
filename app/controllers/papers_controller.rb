@@ -1,6 +1,7 @@
 class PapersController < ApplicationController
     protect_from_forgery
     before_action :authenticate_user!, only: [:new, :create]
+    layout "admin", only: [:new, :create]
 
     def new
         @paper = Paper.new
