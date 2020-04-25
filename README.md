@@ -72,6 +72,13 @@ Currently, we have some basic authentication in front of the website. We will be
 
 In development, the username and password is `foo` / `bar`.
 
+## Create an admin account
+Open a console with `rails console` and run the following:
+
+```ruby
+User.new(email: 'your@email', password: 'anypassword').save
+```
+
 ## Running tests
 
 ```
