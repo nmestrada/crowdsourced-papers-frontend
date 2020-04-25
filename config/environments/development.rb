@@ -57,6 +57,4 @@ Rails.application.configure do
 
   config.basic_auth_username = ENV['AUTH_USERNAME'] || 'foo'
   config.basic_auth_password = ENV['AUTH_PASSWORD'] || 'bar'
-
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
