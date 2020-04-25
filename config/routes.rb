@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root 'papers#index'
 
   get '/submit', to: 'papers#new'
-  post '/submit', to: 'papers#post'
+  post '/submit', to: 'papers#create'
 end

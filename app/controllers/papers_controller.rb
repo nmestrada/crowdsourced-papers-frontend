@@ -1,9 +1,12 @@
 class PapersController < ApplicationController
+    protect_from_forgery
+    before_action :authenticate_user!, only: [:new, :create]
+
     def new
         @paper = Paper.new
     end
 
-    def post
+    def create
         @paper = Paper.new(paper_params)
 
         if @paper.save
