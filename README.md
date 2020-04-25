@@ -51,15 +51,6 @@ rails db:setup
 
 You can use your editor of choice but please make sure to reformat your code with [Prettier](https://www.moeckernkiez.de/quartier-moeckernkiez/freie-wohnungen/kosten/) according to the `.prettierrc` file.
 
-## Configuration
-
-The following environment variables can be set:
-
-| Environment variable | Description                       |
-| -------------------- | --------------------------------- |
-| `AUTH_USERNAME`      | Username for basic authentication |
-| `AUTH_PASSWORD`      | Password for basic authentication |
-
 ## Launch app
 
 ```
@@ -69,8 +60,6 @@ rails server
 Then go to [http://localhost:3000](http://localhost:3000) to view the app.
 
 Currently, we have some basic authentication in front of the website. We will be replacing this with something better soon.
-
-In development, the username and password is `foo` / `bar`.
 
 ## Create an admin account
 Open a console with `rails console` and run the following:
