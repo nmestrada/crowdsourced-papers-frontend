@@ -22,6 +22,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
 gem 'country_select', '~> 4.0'
+
+# https://github.com/heartcombo/devise/blob/a17abad57a5d97594701cee7eac072170f739313/MIT-LICENSE
+gem 'devise', '~> 4.7', '>= 4.7.1'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
