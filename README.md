@@ -23,6 +23,10 @@ The stack is:
 - Postgres
 - Heroku
 
+### Prerequisites
+- Ruby 2.6.5
+- Node >=10.13.0
+
 ### Installation
 
 Install and start postgresql:
