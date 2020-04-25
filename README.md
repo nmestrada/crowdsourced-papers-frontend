@@ -76,7 +76,7 @@ In development, the username and password is `foo` / `bar`.
 Open a console with `rails console` and run the following:
 
 ```ruby
-User.new(email: 'your@email', password: 'anypassword').save
+User.create(username: 'anyusername', password: 'anypassword')
 ```
 
 ## Running tests
